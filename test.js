@@ -42,3 +42,65 @@ console.log (checkStorage_2(100, 50));
 console.log (checkStorage_2(200, 20));
 console.log (checkStorage_2(150, 0));
 console.log (checkStorage_2(80, 80));
+// ------------------------------------
+console.log("-----------------------------");
+
+function checkPassword(password) {
+  const correctPassword = "jqueryismyjam";
+  return password == correctPassword ? "Access granted" : "Access denied, wrong password!";
+}
+console.log(checkPassword("jqueryismyjam"));
+console.log(checkPassword("angul4r1sl1f3"));
+console.log(checkPassword("r3actsux"));
+// ------------------------------------
+console.log("-----------------------------");
+function getSubscriptionPrice(type) {
+  switch(type){
+    case "starter":
+      return 0;
+      break;
+    case "professional":
+      return 20;
+      break;
+    case "organization":
+      return 50;
+      break;
+    default:
+      return "Invalid subscription type!"
+  }
+}
+console.log (getSubscriptionPrice("professional"));
+console.log (getSubscriptionPrice("organization"));
+console.log (getSubscriptionPrice("starter"));
+console.log (getSubscriptionPrice("random"));
+console.log (getSubscriptionPrice("premium"));
+// ------------------------------------
+console.log("-----------------------------");
+function isNumberInRange(start, end, number) {
+  return number>start&&number<end;
+}
+console.log (isNumberInRange(10, 30, 17));
+console.log (isNumberInRange(10, 30, 5));
+console.log (isNumberInRange(20, 50, 24));
+console.log (isNumberInRange(20, 50, 76));
+// ------------------------------------
+console.log("-----------------------------");
+console.log("Логічний оператор або")
+function checkAccess(subType) {
+  if (subType === "pro" || subType === "vip") {
+    return true; // Доступ дозволено
+  } else {
+    return false; // Доступ заборонено
+  }
+}
+console.log(checkAccess("pro"));
+console.log(checkAccess("starter"));
+console.log(checkAccess("vip"));
+console.log(checkAccess("free"));
+// ------------------------------------
+console.log("-----------------------------");
+function toggleModalVisibility(isVisible) {
+  return !isVisible
+}
+console.log(toggleModalVisibility(true));
+console.log(toggleModalVisibility(false));
